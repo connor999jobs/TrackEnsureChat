@@ -1,0 +1,70 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Chat</servlet-name>
+    <servlet-class>com.chat.Chat</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChatStore</servlet-name>
+    <servlet-class>com.chat.ChatStore</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReloadData</servlet-name>
+    <servlet-class>com.chat.ReloadData</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the registration of my J2EE component</display-name>
+    <servlet-name>ChatRegistration</servlet-name>
+    <servlet-class>com.chat.ChatRegistration</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Chat</servlet-name>
+    <url-pattern>/chat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChatStore</servlet-name>
+    <url-pattern>/chatstore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReloadData</servlet-name>
+    <url-pattern>/reloaddata</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChatRegistration</servlet-name>
+    <url-pattern>/chatregistration</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <welcome-file-list>
+    <welcome-file>registration.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
